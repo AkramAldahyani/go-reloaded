@@ -19,7 +19,7 @@ func StringToArray(s string) []string {
 				word = ""
 			}
 
-		} else if string(data[i]) == "," || string(data[i]) == "." || string(data[i]) == "!" || string(data[i]) == "?" || string(data[i]) == ":" {
+		} else if string(data[i]) == "," || string(data[i]) == "." || string(data[i]) == "!" || string(data[i]) == "?" || string(data[i]) == ":" || string(data[i]) == "'" {
 			if word != "" {
 				arr = append(arr, word)
 				word = ""
@@ -36,7 +36,6 @@ func StringToArray(s string) []string {
 			}
 			word = ""
 		}
-
 	}
 	return arr
 }

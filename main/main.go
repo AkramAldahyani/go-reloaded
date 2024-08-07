@@ -1,9 +1,9 @@
 package main
 
 import (
-	"car"
 	"fmt"
 	"os"
+	"car"
 )
 
 func main() {
@@ -16,24 +16,14 @@ func main() {
 			return
 		} else {
 			data := car.StringToArray(string(dat))
-			for i := 0; i < len(data); i++ {
-				switch data[i] {
-				case "(cap)":
-					data[i-1] = car.Capitalize(data[i-1])
-				case "(up)":
-					data[i-1] = car.ToUpper(data[i-1])
-				case "(low)":
-					data[i-1] = car.ToLower(data[i-1])
-				}
-			}
-			fmt.Println(car.ArrayToString(data))
 			
+			fmt.Println(car.ArrayToString(data))
+
 		}
 
 	} else {
 		fmt.Print("Incorrect argument format! Please try again.")
 	}
-
 }
 
 // for i := 0; i < len(data); i++ {
