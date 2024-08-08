@@ -16,7 +16,7 @@ func main() {
 			return
 		} else {
 			data := car.StringToArray(string(dat))
-			
+			data = car.Check(data)
 			fmt.Println(car.ArrayToString(data))
 
 		}
