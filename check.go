@@ -1,5 +1,5 @@
 /*this func will be used to change to format the input where every condeition will be implemnted and deleted at the same time*/
-package car
+package reloaded
 
 import (
 	"regexp"
@@ -60,9 +60,21 @@ func Reverse(f func(string) string, arr []string, num, pos int) []string {
 }
 func VowelLetter(arr []string) []string {
 	//This function will check for the vowel letters.
-	var data []string
-	//compelete this function.
-	return data
+	vowel := regexp.MustCompile(`^[AEIOUaeiou]`)
+	
+	for i := 1; i < len(arr); i++ {
+		if vowel.MatchString(arr[i]) {
+			if arr[i-1] == "a"{
+				arr[i-1] = "an"
+			}else if arr[i-1] == "A"{
+				arr[i-1] = "An"
+			}
+			
+		} 
+		
+	}
+	
+	return arr
 }
 
 func Bin(b string) string {

@@ -1,5 +1,6 @@
-// this function converts the modified array to string again.
-package car
+// this function converts the modified array to more orgnized string.
+
+package reloaded
 
 func ArrayToString(arr []string) string {
 	var str string
