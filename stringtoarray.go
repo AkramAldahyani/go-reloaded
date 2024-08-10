@@ -1,6 +1,7 @@
 /*if there is a single panctuation and no spaces before or after then it will be a single word, but if there any space so its not a single word*/
 package reloaded
-//This function is used to turn the string to array based on a several rules.
+
+// This function is used to turn the string to array based on a several rules.
 func StringToArray(s string) []string {
 	var word string
 	var arr []string

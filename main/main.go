@@ -1,12 +1,13 @@
 package main
 
 import (
-	"reloaded"
 	"fmt"
 	"io"
 	"os"
+	"reloaded"
 )
-//There is an error in resulte file. It gives a space in front of the word. fix it.
+
+// There is an error in resulte file. It gives a space in front of the word. fix it.
 func main() {
 	files := os.Args[1:]
 	if len(files) == 2 {

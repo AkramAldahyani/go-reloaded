@@ -1,4 +1,4 @@
-/*this func will be used to change to format the input where every condeition will be implemnted and deleted at the same time*/
+/*this func is used to change the format of the input where every condeition will be implemnted and deleted at the same time, so we can get a clear output*/
 package reloaded
 
 import (
@@ -61,19 +61,19 @@ func Reverse(f func(string) string, arr []string, num, pos int) []string {
 func VowelLetter(arr []string) []string {
 	//This function will check for the vowel letters.
 	vowel := regexp.MustCompile(`^[AEIOUaeiou]`)
-	
+
 	for i := 1; i < len(arr); i++ {
 		if vowel.MatchString(arr[i]) {
-			if arr[i-1] == "a"{
+			if arr[i-1] == "a" {
 				arr[i-1] = "an"
-			}else if arr[i-1] == "A"{
+			} else if arr[i-1] == "A" {
 				arr[i-1] = "An"
 			}
-			
-		} 
-		
+
+		}
+
 	}
-	
+
 	return arr
 }
 

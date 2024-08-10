@@ -1,5 +1,6 @@
 package reloaded
-//This function is for the capitalaization.
+
+// This function is for the capitalaization.
 func Capitalize(s string) string {
 	str := []rune(s)
 	start := true

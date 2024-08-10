@@ -1,5 +1,6 @@
 package reloaded
-//Turn the string to all lower case strings
+
+// Turn the string to all lower case strings
 func ToLower(s string) string {
 	str := []rune(s)
 	for i := 0; i < len(str); i++ {
@@ -9,7 +10,8 @@ func ToLower(s string) string {
 	}
 	return string(str)
 }
-//Turn the string to all upper case letters.
+
+// Turn the string to all upper case letters.
 func ToUpper(s string) string {
 	str := []rune(s)
 	for i := 0; i < len(str); i++ {

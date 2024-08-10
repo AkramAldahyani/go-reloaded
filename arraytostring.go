@@ -32,7 +32,9 @@ func ArrayToString(arr []string) string {
 					str += "'"
 				}
 			}
-		} else {
+		} else if i == 0{
+			str += arr[i]
+		}else {
 			str += " " + arr[i]
 		}
 	}
